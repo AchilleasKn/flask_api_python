@@ -1,0 +1,6 @@
+flask
+pickleshare
+numpy==1.13.0
+pandas
+scipy
+scikit-learn

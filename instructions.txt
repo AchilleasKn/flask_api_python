@@ -1,0 +1,12 @@
+docker build -t flask_api .
+
+docker run -d -p 5000:5000 flask_api
+
+docker ps 
+
+docker logs 
+
+POST http://192.168.172.129:5000/predict
+{
+	"feature_array":[4.9, 3.0 , 1.4, 0.2]
+}
