@@ -84,7 +84,7 @@ URL: `http://0.0.0.0:5000/predict`
 - Sample query for "Setosa" type:
 ```json
 {
-	"feature_array":[4.9, 3.0, 1.4, 0.2]
+	"feature_array":[4.9, 2.9, 1.2, 0.3]
 }
 ```
 
@@ -109,6 +109,22 @@ The response should look like this:
 {
     "prediction": [
         1
+    ]
+}
+```
+
+- Sample query for "Virginica" type:
+```json
+{
+	"feature_array":[6.2, 3.1, 5.3, 2.4]
+} 
+```
+
+The response should look like this:
+```json
+{
+    "prediction": [
+        2
     ]
 }
 ```
