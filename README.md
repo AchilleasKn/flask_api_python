@@ -42,13 +42,10 @@ Predicted attribute: class of iris plant.
 git clone https://github.com/AchilleasKn/flask_api_python.git
 
 # Change Directory
-cd flask_api_python
+cd flask_api_python/api
 
 # Install the requirements
 pip install -r requirements.txt
-
-# Change Directory
-cd api
 
 # Run the script in Python
 python api.py
