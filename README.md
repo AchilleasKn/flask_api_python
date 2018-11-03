@@ -65,6 +65,9 @@ cd flask_api_python/api
 # Build the docker image
 docker build -t flask_api .
 
+# For the alpine version run the following
+#docker build -f Dockerfile.alpine -t flask_api .
+
 # Run the flask_api image and expose the 5000 port 
 docker run -d -p 5000:5000 flask_api
 
