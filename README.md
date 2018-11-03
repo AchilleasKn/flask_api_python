@@ -30,7 +30,7 @@ Predicted attribute: class of iris plant.
 4. deploy the application to a cloud server.
 
 ## Technical Requirements
-+ Python 3.5+,
++ Python 3.4+,
 + Docker,
 + The required Python libraries used can be installed from the included _requirements.txt_ file:
 
@@ -42,16 +42,16 @@ Predicted attribute: class of iris plant.
 git clone https://github.com/AchilleasKn/flask_api_python.git
 
 # Change Directory
-cd flask_api_python
+cd flask_api_python/api
+
+# Install pip for Python3
+apt install python3-pip
 
 # Install the requirements
-pip install -r requirements.txt
-
-# Change Directory
-cd api
+pip3 install -r requirements.txt
 
 # Run the script in Python
-python api.py
+python3 api.py
 ```
 
 ### On Docker

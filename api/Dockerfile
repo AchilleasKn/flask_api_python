@@ -14,4 +14,4 @@ WORKDIR /app
 RUN pip3 install -r requirements.txt
 
 # run the flask API
-CMD python api.py
+CMD python3 api.py
