@@ -55,6 +55,8 @@ python3 api.py
 ```
 
 ### On Docker
+##### From scratch
+
 ```bash
 # Clone the project
 git clone https://github.com/AchilleasKn/flask_api_python.git
@@ -70,6 +72,27 @@ docker build -t flask_api .
 
 # Run the flask_api image and expose the 5000 port 
 docker run -d -p 5000:5000 flask_api
+
+# To see the running containers
+docker ps 
+
+# To see the logs of our running container
+docker logs <Container ID>
+```
+
+##### With Docker Pull
+```bash
+# Pull the docker image
+docker pull achilleaskn/flask_api_python:latest
+
+# For the alpine version run the following
+#docker pull achilleaskn/flask_api_python:alpine.latest
+
+# Run the flask_api image and expose the 5000 port 
+docker run -d -p 5000:5000 achilleaskn/flask_api_python:latest
+
+# For the alpine version run the following
+#docker run -d -p 5000:5000 achilleaskn/flask_api_python:alpine.latest
 
 # To see the running containers
 docker ps 
