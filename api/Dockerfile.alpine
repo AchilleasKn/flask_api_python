@@ -24,7 +24,7 @@ RUN apk add --no-cache \
     \
     ln -s locale.h /usr/include/xlocale.h && \
     \
-    pip install -r requirements.txt && \
+    pip3 install -r requirements.txt && \
     \
     rm -r /root/.cache && \
     find /usr/lib/python3.*/ -name 'tests' -exec rm -r '{}' + && \
@@ -33,15 +33,6 @@ RUN apk add --no-cache \
     rm /usr/include/xlocale.h && \
     \
     apk del .build-dependencies
-
-# Upgrade pip3
-#RUN pip3 install --upgrade pip 
-
-# Install requiremtnts
-#RUN pip3 install -r requirements.txt
-
-# Expose ports
-#EXPOSE 5000
 
 # run the flask API
 CMD python3 api.py
