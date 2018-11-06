@@ -55,6 +55,20 @@ python3 api.py
 ```
 
 ### On Docker
+
+###### Available images:
+- achilleaskn/flask_api_python:latest
+
+This image is based on the python:3.6-jessie official image
+
+[![](https://images.microbadger.com/badges/image/achilleaskn/flask_api_python.svg)](https://microbadger.com/images/achilleaskn/flask_api_python "Get your own image badge on microbadger.com")
+
+- achilleaskn/flask_api_python:alpine.latest
+
+This image is based on Alpine Linux image which is a lightweight version of Linux
+
+[![](https://images.microbadger.com/badges/image/achilleaskn/flask_api_python:alpine.latest.svg)](https://microbadger.com/images/achilleaskn/flask_api_python:alpine.latest "Get your own image badge on microbadger.com")
+
 ##### From scratch
 
 ```bash
